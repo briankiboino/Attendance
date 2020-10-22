@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+     <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <TextView
+             android:layout_marginTop="5dp"
+             android:id="@+id/welcome_name"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:layout_marginLeft="120dp"
+             android:textColor="@color/colorDark" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circular"
+            android:layout_marginTop="50dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            app:cpb_round_border="false"
+            app:cpb_indeterminate_mode="false"
+            app:cpb_progressbar_color="@color/colorBlue"
+            app:cpb_progressbar_width="15dp"
+            app:cpb_background_progressbar_color="@color/colorWhite"
+            app:cpb_background_progressbar_width="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"/>
+
+         <TextView
+             android:id="@+id/textView"
+             android:layout_width="100dp"
+             android:layout_marginLeft="145dp"
+             android:textSize="17dp"
+             android:layout_marginTop="145dp"
+             android:textColor="@color/colorDark"
+             android:layout_height="wrap_content" />
+         <LinearLayout
+             android:layout_width="300dp"
+             android:layout_marginTop="320dp"
+             android:layout_marginLeft="25dp"
+             android:layout_height="50dp"
+             android:background="@drawable/container_rounded">
+             <TextView
+                 android:id="@+id/weeklyprogress"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_width="200dp"
+                 android:layout_height="match_parent"
+                 android:textColor="@color/colorWhite" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="300dp"
+             android:layout_marginTop="380dp"
+             android:layout_marginLeft="25dp"
+             android:layout_height="50dp"
+             android:background="@drawable/container_rounded">
+         <TextView
+             android:id="@+id/monthlyprogress"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="10dp"
+             android:layout_width="160dp"
+             android:layout_height="match_parent"
+             android:textColor="@color/colorWhite" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="300dp"
+             android:layout_marginTop="440dp"
+             android:layout_marginLeft="25dp"
+             android:layout_height="50dp"
+             android:background="@drawable/container_rounded">
+         <TextView
+             android:id="@+id/semesterprogress"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="10dp"
+             android:layout_width="160dp"
+             android:layout_height="match_parent"
+             android:textColor="@color/colorWhite" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="300dp"
+             android:layout_marginTop="500dp"
+             android:layout_marginLeft="25dp"
+             android:layout_height="50dp"
+             android:background="@drawable/container_rounded">
+             <TextView
+                 android:id="@+id/yearlyprogress"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_width="160dp"
+                 android:layout_height="match_parent"
+                 android:textColor="@color/colorWhite" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:layout_marginTop="570dp"
+             android:layout_marginLeft="75dp">
+             <Button
+                 android:id="@+id/generate_pdf"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:textColor="@color/colorWhite"
+                 android:textAllCaps="false"
+                 android:background="@color/colorBlue"
+                 android:text="View attendance in pdf">
+             </Button>
+         </LinearLayout>
+
+
+     </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

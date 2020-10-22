@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    tools:context=".StarterActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/jkuatlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="140dp"
+            android:text="Your success,"
+            android:textColor="@color/colorRed"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="160dp"
+            android:text="our priority"
+            android:textColor="@color/colorRed"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="registerAccount"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button2"
+            android:onClick="signIn"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+</LinearLayout>

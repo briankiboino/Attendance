@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.attendance.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.attendance.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.attendance.ui.attendance.AttendanceFragment"
+        android:label="@string/menu_attendance"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.attendance.ui.timetable.TimetableFragment"
+        android:label="@string/menu_timetable"
+        tools:layout="@layout/fragment_timetable" />
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.attendance.nav_progress"
+        android:label="Timetable"
+        tools:layout="@layout/fragment_nav_progress" />
+
+</navigation>

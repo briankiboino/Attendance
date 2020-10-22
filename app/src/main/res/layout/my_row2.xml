@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/unit_Name"
+                android:layout_column="1"
+                android:layout_marginRight="30dp"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/unit_Code"
+                android:layout_marginRight="30dp"
+                android:layout_column="1"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/unit_Lecturer"
+                android:layout_column="1"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/unit_Venue"
+                android:layout_column="1"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_marginRight="15dp"
+                android:id="@+id/unit_Time"
+                android:layout_column="1"
+                android:padding="2dp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

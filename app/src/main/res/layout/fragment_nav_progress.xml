@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.timetable.TimetableFragment">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Unit"
+                android:layout_column="1"
+                android:padding="18dp"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Unit_Code"
+                android:layout_column="1"
+                android:padding="18dp"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Lecturer"
+                android:layout_column="1"
+                android:padding="18dp"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Venue"
+                android:layout_column="1"
+                android:padding="12dp"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Date_time"
+                android:layout_column="1"
+                android:padding="12dp"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="35dp"
+        app:contentPadding="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardUseCompatPadding="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
